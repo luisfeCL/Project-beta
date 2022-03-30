@@ -1,0 +1,39 @@
+.container{
+    width: 100%;
+    margin-bottom: $space-large;
+}
+.gallery{
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    max-width: 100%;
+    font-family: $title-typo;
+    font-size: $text-large;
+    white-space: nowrap;
+    overflow: hidden;
+    margin-bottom: $space;
+    color: $title-textcolor;
+    text-align: center;
+    
+    &__image{
+        background: url("../elements/images/photo\ gallery\ 1.jpg");
+        background-size: cover;
+        background-position: center;
+        
+    }
+    &__image2{
+        background: url("../elements/images/photo\ gallery\ 2.jpg");
+        background-size: cover;
+        background-position: center;
+        
+    }
+    &__text{
+        &--left{
+            writing-mode: vertical-lr;
+            transform: rotate(180deg);
+        }
+        &--right{
+            writing-mode: vertical-lr;
+        }
+    }
+}

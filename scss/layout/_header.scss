@@ -1,0 +1,36 @@
+header{
+    z-index: 3000000;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    background-color: $main-bgcolor;
+    height: $space-xlarge;
+    width: 100%;
+}
+.hamburguer-bt {
+    cursor: pointer;
+    height: 60px;
+    width: 60px;
+    transition: all .2s ease-out;
+}
+
+.hamburguer-bt .hamburguer-bt__stripe {
+    width: $space-medium;
+    height: 4px;
+    background: $headercontent-color;
+    margin: 4px auto;
+    transition: all 0.3s;
+    backface-visibility: hidden;
+}
+
+.hamburguer-bt.on .hamburguer-bt__stripe__top {
+    transform: rotate(45deg) translate(0px, 11px);
+}
+
+.hamburguer-bt.on .hamburguer-bt__stripe__middle {
+    opacity: 0;
+}
+
+.hamburguer-bt.on .hamburguer-bt__stripe__bottom {
+    transform: rotate(-45deg) translate(0px, -11px);
+}

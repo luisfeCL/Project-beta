@@ -1,0 +1,41 @@
+/*=============================================
+=            estilos generales                =
+=============================================*/
+*{
+    box-sizing: border-box;
+}
+body{
+    margin: 0;
+    padding: 0;
+    width: 100vw;
+    max-width: 100vw;
+    background-color: $main-bgcolor;
+}
+main{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+h1, h2, h3{
+    font-weight: 100;
+}
+h3{
+    font-size: $h3;
+    color: $highlight-textcolor;
+    width: 100%;
+    margin: 0;
+    text-align: left;
+}
+ul{
+    list-style: none;
+    padding: 0;
+}
+
+/*=============================================
+=            estilos de botones               = 
+=============================================*/
+button{
+    background-color: transparent;
+    border: 0px;
+    padding: 0;
+}

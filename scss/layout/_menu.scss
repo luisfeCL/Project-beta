@@ -1,0 +1,44 @@
+.menu{
+    padding: $space 0;
+    margin: 0;
+    font-family: $title-typo;
+    text-align: left;
+    z-index: 0;
+    width: 100vw;
+    background-color: $menu-bgcolor;
+    top: 0%;
+    bottom: 0;
+    &__items{
+        margin: 0;
+    }
+    &__button{
+        padding: $small;
+        font-family: $title-typo;
+        font-size: $text-large;
+        color: $highlight-textcolor;
+    }
+    &__icon{
+        fill: $highlight-textcolor;
+    }
+    &__item{
+        padding: 0;
+    }
+    &__submenu{
+        padding:$space $space-medium;
+        background-color: $submenu-bgcolor;
+    }
+    &__li{
+        margin-bottom: $space;
+    }
+    &__link{
+        color: $menu-textcolor;
+        text-decoration: none;
+        margin-bottom: 20px;
+        &:hover{
+            text-decoration: underline $menu-textcolor;
+        }
+    }
+}
+.off{
+    display: none;
+}

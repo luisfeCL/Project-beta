@@ -1,0 +1,30 @@
+.hero{
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    max-width: 100%;
+    font-family: $title-typo;
+    font-size: $text-large;
+    white-space: nowrap;
+    overflow: hidden;
+    margin-bottom: $space-large;
+    color: $title-textcolor;
+    
+    &__image{
+        background: url("../elements/images/mainimage.jpg");
+        background-size: cover;
+        background-position: center;
+        width: 20px;
+        
+    }
+    &__text{
+        white-space: nowrap;
+        &--left{
+            writing-mode: vertical-lr;
+            transform: rotate(180deg);
+        }
+        &--right{
+            writing-mode: vertical-lr;
+        }
+    }
+}

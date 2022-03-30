@@ -1,0 +1,23 @@
+.footer{
+    width: 100%;
+    display: flex;
+    background-color: $footer-bgcolor;
+    align-items: flex-start;
+    justify-content: space-around;
+    padding: $space-medium $space-medium;
+    text-align: center;
+    &__link{
+        color: $highlight-textcolor;
+        text-decoration: none;
+        &:hover{
+            text-decoration: underline $highlight-textcolor;
+        }
+    }
+}
+.container{
+    text-align: left;
+    display: flex;
+    flex-direction: column;
+    
+    margin: 0;
+}

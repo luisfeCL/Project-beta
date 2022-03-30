@@ -1,0 +1,30 @@
+/*=============================================
+=              Estilos del banner             =
+=============================================*/
+
+.banner{
+    min-width: 100%;
+    background-color: $banner-bgcolor;
+    color: $highlight-textcolor;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: $unit;
+    margin-bottom: $space-medium;
+    font-family: $title-typo;
+    font-size: $banner-text;
+    text-align: center;
+    &__text{
+        margin:0 0 $unit 0
+    }
+    &__button{
+        color: $title-textcolor;
+        background-color: $main-bgcolor;
+        font-size: $paragraph;
+        @include button;
+        &:hover{
+            background-color: $darken-pink;
+        }
+    }
+}
