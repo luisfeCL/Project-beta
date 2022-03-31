@@ -24,19 +24,6 @@ body {
   background-color: #f2cfd9;
 }
 
-main {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-}
-
 h1, h2, h3 {
   font-weight: 100;
 }
@@ -188,10 +175,10 @@ button {
 }
 
 header {
-  z-index: 3000000;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  z-index: 1;
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
@@ -242,19 +229,6 @@ header {
   min-width: 100%;
   background-color: #5a2630;
   color: white;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
   padding: 8px;
   margin-bottom: 32px;
   font-family: suave;
@@ -483,4 +457,24 @@ header {
       -ms-flex-direction: column;
           flex-direction: column;
   margin: 0;
+}
+
+.tienda__content {
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+}
+
+.tienda__item {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  min-height: 250px;
+  background: url(../../elements/images/lilagrande.png);
+  background-size: cover;
 }

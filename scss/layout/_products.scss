@@ -1,0 +1,12 @@
+.tienda__content{
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+.tienda__item{
+    display: flex;
+    min-height: 250px;
+    background: url(../../elements/images/lilagrande.png);
+    background-size: cover;
+}
