@@ -1,7 +1,7 @@
 {
     "products": [
         {
-            "image": "",
+            "image": "https://swiperjs.com/demos/images/nature-1.jpg",
             "name": "vampire",
             "category": "Handbag",
             "description": "fall in love",
@@ -10,7 +10,7 @@
             "price": 80
         },
         {
-            "image": "",
+            "image": "https://swiperjs.com/demos/images/nature-1.jpg",
             "name": "purple bat",
             "category": "backpack",
             "description": "Fly over the night",
@@ -19,7 +19,7 @@
             "price": 80
         },
         {
-            "image": "",
+            "image": "https://swiperjs.com/demos/images/nature-1.jpg",
             "name": "purple backpack",
             "category": "backpack",
             "description": "Party rock",
@@ -28,7 +28,7 @@
             "price": 80
         },
         {
-            "image": "",
+            "image": "https://swiperjs.com/demos/images/nature-1.jpg",
             "name": "sky",
             "category": "Shoulder Back",
             "description": "Dream about it",
