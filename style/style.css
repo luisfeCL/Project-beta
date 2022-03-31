@@ -247,7 +247,7 @@ header {
   border: 0px;
 }
 .banner__button:hover {
-  background-color: #ac6a7d;
+  background-color: #f26982;
 }
 
 .hero {
@@ -347,7 +347,7 @@ header {
   margin-bottom: 8px;
 }
 .shop__button:hover {
-  background-color: #ac6a7d;
+  background-color: #f26982;
 }
 
 .container {
@@ -466,15 +466,40 @@ header {
   display: flex;
   -ms-flex-wrap: wrap;
       flex-wrap: wrap;
-  -ms-flex-pack: distribute;
-      justify-content: space-around;
+  padding: 64px;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+.tienda__item {
+  text-align: center;
+  width: 50%;
+  margin-bottom: 16px;
+  margin-right: 16px;
+  background-color: #f26982;
+  background-size: cover;
+  background-position: center;
+  -webkit-box-sizing: content-box;
+          box-sizing: content-box;
+  padding: 16px;
 }
 
-.tienda__item {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  min-height: 250px;
+.item__image {
+  position: relative;
+  left: 50%;
+  -webkit-transform: translateX(-50%);
+          transform: translateX(-50%);
+  width: 100%;
+  min-height: 300px;
   background: url(../../elements/images/lilagrande.png);
+  background-position: center;
   background-size: cover;
+}
+.item__name {
+  font-family: suave;
+  font-size: 24px;
+  color: white;
 }

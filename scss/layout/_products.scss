@@ -1,12 +1,38 @@
-.tienda__content{
+.tienda{
+    &__content{
     width: 100%;
     display: flex;
     flex-wrap: wrap;
-    justify-content: space-around;
+    padding: $space-large;
+    align-items: center;
+    justify-content: center;
+    }
+    &__item{
+        text-align: center;
+        width: 50%;
+        margin-bottom: $space;
+        margin-right: $space;
+        background-color: $darken-pink;
+        background-size: cover;
+        background-position: center;
+        box-sizing: content-box;
+        padding: $space;
+    }
 }
-.tienda__item{
-    display: flex;
-    min-height: 250px;
-    background: url(../../elements/images/lilagrande.png);
-    background-size: cover;
+.item{
+    &__image{
+        position: relative;
+        left: 50%;
+        transform: translateX(-50%);
+        width: 100%;
+        min-height: 300px;
+        background: url(../../elements/images/lilagrande.png);
+        background-position: center;
+        background-size: cover;
+    }
+    &__name{
+        font-family: $title-typo;
+        font-size: $text-large;
+        color: $highlight-textcolor
+    }
 }
