@@ -29,11 +29,9 @@ h1, h2, h3 {
 }
 
 h3 {
-  font-size: 20px;
-  color: white;
+  font-size: 24px;
   width: 100%;
   margin: 0;
-  text-align: left;
 }
 
 ul {
@@ -131,12 +129,10 @@ button {
   padding: 16px 0;
   margin: 0;
   font-family: suave;
-  text-align: left;
+  text-align: center;
   z-index: 0;
   width: 100vw;
   background-color: #3b8c75;
-  top: 0%;
-  bottom: 0;
 }
 .menu__items {
   margin: 0;
@@ -144,7 +140,7 @@ button {
 .menu__button {
   padding: 4px;
   font-family: suave;
-  font-size: 24px;
+  font-size: 28px;
   color: white;
 }
 .menu__icon {
@@ -164,6 +160,7 @@ button {
   color: #5a2630;
   text-decoration: none;
   margin-bottom: 20px;
+  font-size: 20px;
 }
 .menu__link:hover {
   -webkit-text-decoration: underline #5a2630;
@@ -241,7 +238,7 @@ header {
 .banner__button {
   color: #5a2630;
   background-color: #f2cfd9;
-  font-size: 16px;
+  font-size: 20px;
   font-family: suave;
   padding: 8px;
   border: 0px;
@@ -290,7 +287,7 @@ header {
 
 .presentation {
   font-family: suave;
-  font-size: 24px;
+  font-size: 28px;
   color: #5a2630;
   font-weight: regular;
   font-weight: 100;
@@ -304,14 +301,18 @@ header {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  -ms-flex-pack: distribute;
-      justify-content: space-around;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  padding: 0 16px;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
 }
 .presentation__image {
   width: 40%;
 }
 .presentation__text {
-  font-size: 16px;
+  font-size: 20px;
   text-align: left;
   width: 40%;
   display: -webkit-box;
@@ -324,10 +325,11 @@ header {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+  padding-left: 32px;
 }
 
 .shop {
-  width: 90%;
+  width: 100%;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -335,7 +337,11 @@ header {
       flex-wrap: wrap;
   -ms-flex-pack: distribute;
       justify-content: space-around;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
   margin-bottom: 64px;
+  padding: 0 32px;
 }
 .shop__button {
   font-family: suave;
@@ -343,11 +349,12 @@ header {
   border: 0px;
   background-color: #5a2630;
   color: white;
-  font-size: 16px;
+  font-size: 20px;
   margin-bottom: 8px;
 }
 .shop__button:hover {
   background-color: #f26982;
+  color: #0d0d0d;
 }
 
 .container {
@@ -397,7 +404,7 @@ header {
 
 .products__title {
   font-family: suave;
-  font-size: 24px;
+  font-size: 28px;
   color: #5a2630;
   font-weight: regular;
   font-weight: 100;
@@ -438,6 +445,9 @@ header {
   padding: 32px 32px;
   text-align: center;
 }
+.footer__title {
+  color: white;
+}
 .footer__link {
   color: white;
   text-decoration: none;
@@ -459,6 +469,14 @@ header {
   margin: 0;
 }
 
+.tienda {
+  text-align: center;
+}
+.tienda__titulo {
+  font-family: suave;
+  font-size: 32px;
+  color: #5a2630;
+}
 .tienda__content {
   width: 100%;
   display: -webkit-box;
@@ -466,7 +484,7 @@ header {
   display: flex;
   -ms-flex-wrap: wrap;
       flex-wrap: wrap;
-  padding: 64px;
+  padding: 32px;
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
@@ -475,6 +493,7 @@ header {
           justify-content: center;
 }
 .tienda__item {
+  cursor: pointer;
   text-align: center;
   width: 50%;
   margin-bottom: 16px;
@@ -485,6 +504,13 @@ header {
   -webkit-box-sizing: content-box;
           box-sizing: content-box;
   padding: 16px;
+  border-radius: 16px;
+  -webkit-transition: 0.5s;
+  transition: 0.5s;
+}
+.tienda__item:hover {
+  -webkit-transform: translateY(-5%);
+          transform: translateY(-5%);
 }
 
 .item__image {
@@ -493,7 +519,7 @@ header {
   -webkit-transform: translateX(-50%);
           transform: translateX(-50%);
   width: 100%;
-  min-height: 300px;
+  min-height: 150px;
   background: url(../../elements/images/lilagrande.png);
   background-position: center;
   background-size: cover;
@@ -501,5 +527,64 @@ header {
 .item__name {
   font-family: suave;
   font-size: 24px;
+  color: white;
+}
+.item__button {
+  background-color: #f2cfd9;
+  padding: 16px;
+  width: 98%;
+  font-family: krylon;
+  font-size: 20px;
+  color: #5a2630;
+  cursor: pointer;
+}
+.item__button:hover {
+  background-color: #5a2630;
+  color: #f2cfd9;
+}
+
+.single {
+  width: 100%;
+  text-align: center;
+  font-family: suave;
+  color: #5a2630;
+  margin-bottom: 64px;
+  padding: 32px;
+}
+.single__image {
+  background: url("../elements/images/lilagrande.png");
+  min-height: 500px;
+  max-width: 500px;
+  background-position: center;
+  background-size: contain;
+  margin: 0 auto;
+  margin-bottom: 32px;
+}
+.single__title {
+  font-size: 32px;
+}
+.single__name {
+  font-size: 32px;
+}
+.single__description {
+  font-size: 20px;
+  color: #0d0d0d;
+}
+.single__details {
+  font-size: 20px;
+  max-width: 300px;
+  margin: 16px auto;
+}
+.single__button {
+  min-width: 300px;
+  background-color: #f26982;
+  color: #0d0d0d;
+  padding: 16px;
+  font-family: suave;
+  font-size: 28px;
+  cursor: pointer;
+}
+.single__button:hover {
+  background-color: #5a2630;
   color: white;
 }

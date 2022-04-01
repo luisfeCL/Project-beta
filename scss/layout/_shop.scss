@@ -1,9 +1,11 @@
 .shop{
-    width: 90%;
+    width: 100%;
     display: flex;
     flex-wrap: wrap;
     justify-content: space-around;
+    align-items: center;
     margin-bottom: $space-large;
+    padding: 0 $space-medium;
     &__button{
         @include button;
         background-color: $button-color;
@@ -12,6 +14,7 @@
         margin-bottom: $unit;
         &:hover{
             background-color: $darken-pink;
+            color: $paragraph-textcolor;
         }
     }
 }

@@ -1,6 +1,7 @@
 import { swiper } from './swiper.js';
 
 
+
 const hamburguerButton = document.querySelector('.hamburguer-bt');
 const menu = document.querySelector('.menu');
 const subMenuButtonProducts = document.querySelector('.products');
@@ -22,14 +23,16 @@ subMenuButtonAbout.addEventListener('click', function() {
 })
 
 fetch("./js/data.json")
-    .then(function (response){
-        return response.json()})
-    .then(function (response){
+    .then(function(response){
+        return response.json()
+    })
+    .then(function(response){
         const productos = response.products;
-        productos.forEach(elemento, function(){
-            document.querySelector('.swiper-wrapper').innerHTML += 
+        productos.forEach(function(elemento){
+            document.querySelector('.swiper-wrapper').innerHTML +=
             `<div class="swiper-slide">
-                <img src="${productos.img}">
+                <img src="${elemento.image}" />
             </div>`
         })
-})
+        
+    })

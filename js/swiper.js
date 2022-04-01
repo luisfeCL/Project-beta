@@ -14,3 +14,18 @@ export var swiper = new Swiper(".mySwiper", {
         el: ".swiper-pagination",
     },
 });
+
+fetch("./js/data.json")
+    .then(function(response){
+        return response.json()
+    })
+    .then(function(response){
+        const productos = response.products;
+        productos.forEach(function(elemento){
+            document.querySelector('.swiper-wrappe').innerHTML +=
+            `<div class="swiper-slide">
+                <img src="${elemento.image}" />
+            </div>`
+        })
+        
+    })

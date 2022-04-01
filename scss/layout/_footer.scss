@@ -6,6 +6,9 @@
     justify-content: space-around;
     padding: $space-medium $space-medium;
     text-align: center;
+    &__title{
+        color: $highlight-textcolor;
+    }
     &__link{
         color: $highlight-textcolor;
         text-decoration: none;
