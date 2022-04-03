@@ -21,14 +21,6 @@ subMenuButtonAbout.addEventListener('click', function() {
 const params = new URLSearchParams(window.location.search);
 const userIndex = params.get('product');
 
-function nose (elemento){
-            document.querySelector('.single').innerHTML +=
-            `<a href='./single_product.html?product=${elemento.name}' class="tienda__item grid__cell--20" >
-                <div class="item__image"></div>
-                <h2 class="item__name">${elemento.name}</h2>
-                <button class="item__button">buy</button>
-            </a>`;
-            
-        }
-
-nose()
+export const renderDetail = function(productName) {
+    console.log(`PINTAR FRUTA ${productName}`);
+}
