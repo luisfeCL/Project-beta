@@ -46,6 +46,7 @@ button {
   background-color: transparent;
   border: 0px;
   padding: 0;
+  cursor: pointer;
 }
 
 /*=============================================
@@ -186,6 +187,10 @@ header {
   width: 100%;
 }
 
+.header__backpack {
+  cursor: pointer;
+}
+
 .hamburguer-bt {
   cursor: pointer;
   height: 60px;
@@ -217,6 +222,101 @@ header {
 .hamburguer-bt.on .hamburguer-bt__stripe__bottom {
   -webkit-transform: rotate(-45deg) translate(0px, -11px);
           transform: rotate(-45deg) translate(0px, -11px);
+}
+
+.item__container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  margin-bottom: 16px;
+}
+
+.backpack {
+  background-color: white;
+  padding: 32px;
+  text-align: center;
+}
+.backpack__title {
+  font-family: suave;
+  font-size: 28px;
+  color: #5a2630;
+}
+.backpack__item {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+.backpack__image {
+  margin-right: 16px;
+  max-width: 100px;
+}
+.backpack__name {
+  font-family: krylon;
+  font-size: 20px;
+  color: #0d0d0d;
+  margin-right: 16px;
+}
+.backpack__controller {
+  width: 75px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+.backpack__button {
+  min-width: 150px;
+  font-family: suave;
+  font-size: 20px;
+  background-color: #3b8c75;
+  padding: 16px;
+}
+.backpack__button:hover {
+  background-color: #f2cfd9;
+}
+
+.more {
+  text-align: center;
+  font-family: suave;
+  font-size: 16px;
+  width: 25px;
+  height: 25px;
+  background-color: #3b8c75;
+  padding: 4px;
+  border-radius: 50%;
+}
+
+.number {
+  font-family: suave;
+  font-size: 16px;
+}
+
+.less {
+  text-align: center;
+  font-family: suave;
+  font-size: 16px;
+  width: 25px;
+  height: 25px;
+  background-color: red;
+  padding: 4px;
+  border-radius: 50%;
+}
+
+.total {
+  font-family: suave;
+  font-size: 20px;
+  text-align: center;
+  margin-bottom: 16px;
 }
 
 /*=============================================

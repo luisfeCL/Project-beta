@@ -1,0 +1,76 @@
+.backpack{
+    background-color: white;
+    padding: $space-medium;
+    text-align: center;
+    &__title{
+        font-family: $title-typo;
+        font-size: $h2;
+        color: $title-textcolor;
+    }
+    &__item{
+        display: flex;
+        align-items: center;
+
+    }
+    &__image{
+        margin-right: $space;
+        max-width: 100px;
+    }
+    &__name{
+        font-family: $text-typo;
+        font-size: $paragraph;
+        color: $paragraph-textcolor;
+        margin-right: $space;
+    }
+    &__controller{
+        width: 75px;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+    &__button{
+        min-width: 150px;
+        font-family: $title-typo;
+        font-size: $paragraph;
+        background-color: $menu-bgcolor;
+        padding: $space;
+        &:hover{
+            background-color: $main-bgcolor;
+        }
+    }
+}
+
+.more{
+    text-align: center;
+    font-family: $title-typo;
+    font-size: $text-small;
+    width: 25px;
+    height: 25px;
+    background-color: $buttonmore-color;
+    padding: $small;
+    border-radius: 50%;
+
+}
+.number{
+    font-family: $title-typo;
+    font-size: $text-small;
+    
+
+}
+.less{
+    text-align: center;
+    font-family: $title-typo;
+    font-size: $text-small;
+    width: 25px;
+    height: 25px;
+    background-color: $buttonless-color;
+    padding: $small;
+    border-radius: 50%;
+
+}
+.total{
+    font-family: $title-typo;
+    font-size: $paragraph;
+    text-align: center;
+    margin-bottom: $space;
+}

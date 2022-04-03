@@ -7,6 +7,9 @@ header{
     height: $space-xlarge;
     width: 100%;
 }
+.header__backpack{
+    cursor: pointer;;
+}
 .hamburguer-bt {
     cursor: pointer;
     height: 60px;
@@ -33,4 +36,10 @@ header{
 
 .hamburguer-bt.on .hamburguer-bt__stripe__bottom {
     transform: rotate(-45deg) translate(0px, -11px);
+}
+
+.item__container{
+    display: flex;
+    justify-content: center;
+    margin-bottom: $space;
 }
