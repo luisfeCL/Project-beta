@@ -21,25 +21,33 @@ subMenuButtonAbout.addEventListener('click', function() {
 })
 
 
-cardLinks();
 
 
 
+fetch("./js/data.json")
+    .then(function(response){
+        return response.json()
+    })
+    .then(function(response){
+        const productos = response.products;
+        productos.forEach(function(elemento){
+            document.querySelector('.tienda__content').innerHTML +=
+            `<a href='./single_product.html?product=${elemento.name}' class="tienda__item grid__cell--20" >
+                <img src="${elemento.image}" class="item__image"></img>
+                <h2 class="item__name">${elemento.name}</h2>
+                <button class="item__button">buy</button>
+            </a>`;
+            
+        }
+)})
 
-function cardLinks() {
-    document.querySelectorAll('.tienda__item').forEach(function (item) {
-        item.addEventListener('click', function () {
-            location.href = './single_product.html';
-        });
-    });
-}
-// function cardsLink() {
-//     cards.forEach(function(){
-//         cards.addEventListener('click',function(){
-//         cards.classList.add('prueba')
-//         })
-//     })
+
+// function cardLinks() {
+//     document.querySelectorAll('.tienda__item').forEach(function (item) {
+//         item.addEventListener('click', function () {
+//             // location.href = './single_product.html';
+//             alert('si que lo detecta')
+//         });
+//     });
 // }
 
-
-// cardsLink()

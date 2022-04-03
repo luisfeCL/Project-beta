@@ -493,9 +493,12 @@ header {
           justify-content: center;
 }
 .tienda__item {
+  text-decoration: none;
   cursor: pointer;
   text-align: center;
   width: 50%;
+  min-width: 215px;
+  min-height: 250px;
   margin-bottom: 16px;
   margin-right: 16px;
   background-color: #f26982;
@@ -519,7 +522,7 @@ header {
   -webkit-transform: translateX(-50%);
           transform: translateX(-50%);
   width: 100%;
-  min-height: 150px;
+  min-height: 200px;
   background: url(../../elements/images/lilagrande.png);
   background-position: center;
   background-size: cover;
