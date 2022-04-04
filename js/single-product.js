@@ -41,6 +41,24 @@ subMenuButtonAbout.addEventListener('click', function() {
 const params = new URLSearchParams(window.location.search);
 const productId = params.get('product');
 
-export const renderDetail = function(productName) {
-    console.log(`PINTAR FRUTA ${productName}`);
+
+export const detailTemple = function renderDetailTemplate (elemento){
+    return `
+    <h1 class="single__title">Product name </h1>
+    <article class="single__content">
+        <div class="single__image"></div>
+        <h3 class="single__subtitle">description</h3>
+        <p class="single__description">Lorem ipsum dolor sit, amet consectetur adipisicing elit.</p>
+        <h3 class="single__subtitle">Details</h3>
+        <ul class="single__details">
+            <li class="single__detail">• detail(1)</li>
+            <li class="single__detail">• detail(2)</li>
+            <li class="single__detail">• detail(3)</li>
+        </ul>
+        <button class="single__button">buy</button>
+    </article>`
 }
+export const renderDetail = function(productName) {
+    console.log(`producto ${productName}`);
+}
+renderDetail()
