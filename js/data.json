@@ -2,7 +2,7 @@
     "products": [
         {
             "id": 1,
-            "image": "./elements/images/vampire.png",
+            "image": "elements/images/vampire.png",
             "name": "vampire",
             "category": "Handbag",
             "description": "fall in love",
@@ -12,7 +12,7 @@
         },
         {
             "id": 2,
-            "image": "./elements/images/lilaalas.png",
+            "image": "elements/images/lilaalas.png",
             "name": "purple bat",
             "category": "backpack",
             "description": "Fly over the night",
@@ -22,7 +22,7 @@
         },
         {
             "id": 3,
-            "image": "./elements/images/lilagrande.png",
+            "image": "elements/images/lilagrande.png",
             "name": "purple backpack",
             "category": "backpack",
             "description": "Party rock",
@@ -32,7 +32,7 @@
         },
         {
             "id": 4,
-            "image": "./elements/images/shouldersky.png",
+            "image": "elements/images/shouldersky.png",
             "name": "sky",
             "category": "Shoulder Back",
             "description": "Dream about it",

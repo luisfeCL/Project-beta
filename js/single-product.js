@@ -24,6 +24,7 @@ backpackButton.addEventListener('click', function(){
     if (menu.classList.contains('off')){
         backpack.classList.toggle('off')
     }else{
+        hamburguerButton.classList.toggle('on');
         menu.classList.toggle('off');
         backpack.classList.toggle('off')
     }
@@ -38,7 +39,7 @@ subMenuButtonAbout.addEventListener('click', function() {
 })
 
 const params = new URLSearchParams(window.location.search);
-const userIndex = params.get('product');
+const productId = params.get('product');
 
 export const renderDetail = function(productName) {
     console.log(`PINTAR FRUTA ${productName}`);

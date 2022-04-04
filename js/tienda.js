@@ -8,7 +8,7 @@ const subMenuAbout = document.querySelector('.submenuabout');
 const backpackButton = document.querySelector('.header__backpack');
 const backpack = document.querySelector('.backpack')
 
-function hamburgueMenu(){hamburguerButton.addEventListener('click', function() {
+export function hamburgueMenu(){hamburguerButton.addEventListener('click', function() {
     if(backpack.classList.contains('off')){
         hamburguerButton.classList.toggle('on');
         menu.classList.toggle('off')
@@ -21,14 +21,17 @@ function hamburgueMenu(){hamburguerButton.addEventListener('click', function() {
 }
 hamburgueMenu();
 
-backpackButton.addEventListener('click', function(){
+export function openBackpack(){
+    backpackButton.addEventListener('click', function(){
     if (menu.classList.contains('off')){
         backpack.classList.toggle('off')
     }else{
+        hamburguerButton.classList.toggle('on');
         menu.classList.toggle('off');
         backpack.classList.toggle('off')
     }
-})
+})}
+openBackpack()
 
 subMenuButtonProducts.addEventListener('click', function() {
     subMenuProducts.classList.toggle('off')

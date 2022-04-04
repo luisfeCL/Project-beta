@@ -1,5 +1,5 @@
 import { swiper } from './swiper.js';
-
+import { renderDetail } from './single-product.js';
 
 
 const hamburguerButton = document.querySelector('.hamburguer-bt');
@@ -28,6 +28,7 @@ backpackButton.addEventListener('click', function(){
     if (menu.classList.contains('off')){
         backpack.classList.toggle('off')
     }else{
+        hamburguerButton.classList.toggle('on');
         menu.classList.toggle('off');
         backpack.classList.toggle('off')
     }
@@ -52,6 +53,10 @@ fetch("./js/data.json")
             `<div class="swiper-slide">
                 <img src="${elemento.image}" />
             </div>`
+        });
+        document.querySelectorAll('.swiper-slide').forEach(function(elemento, index) {
+            elemento.addEventListener('click', function() {
+                renderDetail(response.name);
+            })
         })
-        
     })
