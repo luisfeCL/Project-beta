@@ -1,4 +1,6 @@
 .single{
+    display: flex;
+    flex-direction: column;
     width: 100%;
     text-align: center;
     font-family: $title-typo;
@@ -6,11 +8,9 @@
     margin-bottom: $space-large;
     padding: $space-medium;
     &__image{
-        background: url('../elements/images/lilagrande.png');
-        min-height: 500px;
-        max-width: 500px;
+        min-height: 400px;
+        max-width:400px;
         background-position: center;
-        background-size: contain;
         margin: 0  auto;
         margin-bottom: $space-medium ;
     }

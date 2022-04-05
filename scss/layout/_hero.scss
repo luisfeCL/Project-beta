@@ -1,6 +1,6 @@
+
 .hero{
-    display: flex;
-    justify-content: center;
+    
     width: 100%;
     max-width: 100%;
     font-family: $title-typo;
@@ -11,20 +11,44 @@
     color: $title-textcolor;
     
     &__image{
-        background: url("../elements/images/mainimage.jpg");
+        background: url("../elements/images/mainimagebig.jpg");
         background-size: cover;
         background-position: center;
-        width: 20px;
+        width: 100%;
+        height: 500px;
+        color: $highlight-textcolor;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
         
+
     }
     &__text{
-        white-space: nowrap;
-        &--left{
-            writing-mode: vertical-lr;
-            transform: rotate(180deg);
+        font-size: $h2;
+    }
+    &__button{
+        border: 2px solid $highlight-textcolor;
+        padding: $space;
+        color: $highlight-textcolor;
+        max-width: 200px;
+        text-align: center;
+        &:hover{
+            background-color: $highlight-textcolor;
+            color: $title-textcolor;
         }
-        &--right{
-            writing-mode: vertical-lr;
-        }
+
+    }
+
+}
+
+
+
+@media (min-width: 900px) {
+    .hero__image{
+        background: url("../elements/images/mainimagebig.jpg");
+        background-size: cover;
+        background-position: center;
+        height: 800px;
     }
 }

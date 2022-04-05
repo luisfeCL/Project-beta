@@ -1,6 +1,9 @@
-.container{
-    width: 100%;
+.gallerycontainer{
+    display: flex;
+    flex-direction: column;
     margin-bottom: $space-large;
+    justify-content: center;
+    
 }
 .gallery{
     display: flex;
@@ -16,15 +19,17 @@
     text-align: center;
     
     &__image{
-        background: url("../elements/images/photo\ gallery\ 1.jpg");
+        background: url("../elements/images/photogallery1.jpg");
         background-size: cover;
         background-position: center;
         
+        
     }
     &__image2{
-        background: url("../elements/images/photo\ gallery\ 2.jpg");
+        background: url("../elements/images/photogallery2.jpg");
         background-size: cover;
         background-position: center;
+        
         
     }
     &__text{
@@ -34,6 +39,51 @@
         }
         &--right{
             writing-mode: vertical-lr;
+        }
+    }
+}
+
+@media (min-width: 900px) {
+    .gallerycontainer{
+        display: flex;
+        flex-direction: row;
+    }
+    .gallery{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        width: 100%;
+        max-width: 100%;
+        font-family: $title-typo;
+        font-size: $text-large;
+        margin-bottom: $space;
+        color: $title-textcolor;
+        text-align: center;
+        &__image{
+            background: url("../elements/images/photogallery1.jpg");
+            background-size: cover;
+            background-position: center;
+            max-width: 500px;
+            min-height: 400px;
+            
+        }
+        &__image2{
+            background: url("../elements/images/photogallery2.jpg");
+            background-size: cover;
+            background-position: center;
+            max-width: 500px;
+            min-height: 400px;
+            
+        }
+        &__text{
+            &--left{
+                writing-mode: horizontal-tb;
+                transform: rotate(0deg);
+            }
+            &--right{
+                writing-mode: horizontal-tb;
+                transform: rotate(180deg);
+            }
         }
     }
 }

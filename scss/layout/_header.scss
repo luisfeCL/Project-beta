@@ -1,4 +1,4 @@
-header{
+.header{
     display: flex;
     z-index: 1;
     align-items: center;
@@ -42,4 +42,46 @@ header{
     display: flex;
     justify-content: center;
     margin-bottom: $space;
+}
+.big__logo{
+    display: none;
+}
+
+
+
+@media (min-width: 900px) {
+    .header{
+        display: none;
+    }
+    .logo{
+        width: 100%;
+        fill-opacity: 0;
+        transition: 0.5s;
+    }
+    .big__logo{
+        display: block;
+        font-family: ladigross;
+        color: red;
+        margin: $space-medium $space;
+        text-align: center;
+        margin-bottom: 0;
+        
+    }
+    .headerlogo_big{
+        margin-bottom: $space;
+    }
+    .nav__container{
+        display: flex;
+        justify-content: space-around;
+        color: $paragraph-textcolor;
+        font-family: $title-typo;
+        font-size: $paragraph;
+        margin-bottom: 0;
+        margin: $unit;
+    }
+    .desktop__link:hover{
+        text-decoration: underline 1px $paragraph-textcolor;
+        cursor: pointer;
+        
+    }
 }
