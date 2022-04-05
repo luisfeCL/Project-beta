@@ -1,0 +1,33 @@
+.shop{
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: $space-large;
+    padding: 0 $space-medium;
+    &__button{
+        @include button;
+        min-width: 200px;
+        background-color: $button-color;
+        color: $highlight-textcolor;
+        font-size: $paragraph;
+        margin-bottom: $space;
+        &:hover{
+            background-color: $darken-pink;
+            color: $paragraph-textcolor;
+        }
+    }
+}
+.marginless{
+    margin-left: 0;
+}
+
+// @media (max-width: 530px) {
+//     .left{
+//         margin-left: 0;
+//     }
+//     .right{
+//         margin-left: 0;
+//     }
+// }

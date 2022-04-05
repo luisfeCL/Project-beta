@@ -45,10 +45,16 @@
 
 
 @media (min-width: 900px) {
-    .hero__image{
-        background: url("../elements/images/mainimagebig.jpg");
-        background-size: cover;
-        background-position: center;
-        height: 800px;
+    .hero{
+        &__image{
+            background: url("../elements/images/mainimagebig.jpg");
+            background-size: cover;
+            background-position: center;
+            height: 800px;
+        }
+        &__text{
+            font-size: $h1;
+        }
+
     }
 }

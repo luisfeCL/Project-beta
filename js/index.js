@@ -1,7 +1,3 @@
-import { swiper } from './swiper.js';
-// import { renderDetail } from './single-product.js';
-
-
 const hamburguerButton = document.querySelector('.hamburguer-bt');
 const menu = document.querySelector('.menu');
 const subMenuButtonProducts = document.querySelector('.products');
@@ -82,9 +78,5 @@ fetch("./js/data.json")
                 <button class="product__button">Add to cart</button>
             </a>`
         });
-        document.querySelectorAll('.swiper-slide').forEach(function(elemento, index) {
-            elemento.addEventListener('click', function() {
-                renderDetail('product');
-            })
+
         })
-    })

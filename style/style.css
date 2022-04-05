@@ -266,6 +266,10 @@ button {
     margin-bottom: 16px;
   }
 
+  .big {
+    display: none;
+  }
+
   .nav__container {
     display: -webkit-box;
     display: -ms-flexbox;
@@ -283,6 +287,16 @@ button {
     -webkit-text-decoration: underline 1px #0d0d0d;
             text-decoration: underline 1px #0d0d0d;
     cursor: pointer;
+  }
+}
+@media (min-width: 1190px) {
+  .big {
+    display: block;
+    margin: 0 auto;
+  }
+
+  .medium {
+    display: none;
   }
 }
 .backpack {
@@ -437,6 +451,9 @@ button {
     background-size: cover;
     background-position: center;
     height: 800px;
+  }
+  .hero__text {
+    font-size: 32px;
   }
 }
 .presentation {
