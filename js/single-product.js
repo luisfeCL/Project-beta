@@ -53,30 +53,6 @@ subMenuButtonAbout.addEventListener('click', function() {
     subMenuAbout.classList.toggle('off')
 })
 
-export const renderDetail = function(productId) {
-    console.log(`PINTAR FRUTA ${productId}`);
-}
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 export const detailTemplate = function(elemento){
     return `
     <h1 class="single__title">${elemento}</h1>
@@ -104,8 +80,15 @@ export const render = function() {
             return response.json()
         })
         .then(function(response) {
-            console.log(response)
-            document.querySelector('.single').innerHTML = detailTemplate(product);
+            debugger
+
+            response.products.forEach(function(response){
+                if (response.name == product){
+                    document.querySelector('.single').innerHTML = detailTemplate(product);
+                    document.querySelector('.single__image').src = response.image;
+
+                }
+            })
         })
 }
 
